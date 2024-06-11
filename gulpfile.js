@@ -26,3 +26,4 @@ function dizTchau() {
 
 exports.default = gulp.parallel(funcaoPadrao, dizOi);
 exports.dizOi = dizOi;
+exports.sass = compilaSass;
