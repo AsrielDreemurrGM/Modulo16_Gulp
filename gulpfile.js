@@ -4,9 +4,11 @@ const sourcemaps = require('gulp-sourcemaps');
 
 function compilaSass() {
     return gulp.src('./source/styles/main.scss')
+        .pipe(sourcemaps.init())
         .pipe(sass({
             outputStyle: 'compressed'
         }))
+        .pipe(sourcemaps.write('./maps'))
         .pipe(gulp.dest('./build/styles'));
 }
 
