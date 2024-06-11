@@ -32,3 +32,6 @@ function dizTchau() {
 exports.default = gulp.parallel(funcaoPadrao, dizOi);
 exports.dizOi = dizOi;
 exports.sass = compilaSass;
+exports.watch = function() {
+    gulp.watch('./source/styles/*.scss', { ignoreInitial: false }, gulp.series(compilaSass));
+}
