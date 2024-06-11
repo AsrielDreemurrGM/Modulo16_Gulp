@@ -1,4 +1,5 @@
 const gulp = require('gulp');
+const sass = require('gulp-sass')(require('sass'));
 
 function funcaoPadrao(callback) {
     setTimeout(function() {
