@@ -1,1 +1,1 @@
-function somar(o,r){return o+r}console.log(somar(10,10)),module.exports=somar;
+function ಠ_ಠ39(o,r){return o+r}console.log(ಠ_ಠ39(10,10)),module.ಠ_ಠ40=ಠ_ಠ39;

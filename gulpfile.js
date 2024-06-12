@@ -7,6 +7,7 @@ const obfuscate = require('gulp-obfuscate');
 function comprimeJavaScript() {
     return gulp.src('./source/scripts/*.js')
         .pipe(uglify())
+        .pipe(obfuscate())
         .pipe(gulp.dest('./build/scripts'))
 }
 
